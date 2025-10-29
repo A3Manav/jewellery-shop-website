@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn {
+  @apply border border-black py-2 px-4 text-black hover:bg-black hover:text-white transition;
+}
+
+/* PWA Install Prompt Animation */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
